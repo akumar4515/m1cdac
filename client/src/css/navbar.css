@@ -1,0 +1,89 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70px;
+    padding: 0 30px;
+    background: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    position:sticky;
+    top:0px;
+}
+
+/* Logo */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 21px;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+/* Navigation */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #364967;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.nav-links a.active {
+    color: #2563eb;
+}
+
+/* Buttons */
+.auth-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.auth-buttons button {
+    padding: 9px 20px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.login-button {
+    background: white;
+    border: 1px solid #2563eb;
+    color: #2563eb;
+}
+
+.register-button {
+    background: #2563eb;
+    border: 1px solid #2563eb;
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    .navbar {
+        padding: 12px 15px;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .auth-buttons {
+        width: 100%;
+        justify-content: center;
+    }
+}
